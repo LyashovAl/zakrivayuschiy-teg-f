@@ -223,7 +223,7 @@
 }
 
 .modal_opened {
-  display: grid;
+  display: flex;
   gap: 30px;
   inline-size: var(--inline-size-modal);
   border: 2px solid currentColor;
