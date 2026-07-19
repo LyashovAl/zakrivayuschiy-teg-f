@@ -222,6 +222,10 @@
   background-color: #fff;
 }
 
+.modal_opened {
+  display: grid;
+}
+
 .modal[open],
 .modal_opened {
   display: grid;
