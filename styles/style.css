@@ -222,7 +222,7 @@
   background-color: #fff;
 }
 
-.modal[open] {
+.modal_opened {
   display: grid;
   gap: 30px;
   inline-size: var(--inline-size-modal);
@@ -234,19 +234,19 @@
   line-height: 1.5;
 }
 
-.modal[open]::backdrop {
+.modal_opened::backdrop {
   background-color: #000;
   opacity: 0.75;
 }
 
-.modal[open] .modal__content {
+.modal_opened .modal__content {
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
   gap: 20px;
 }
 
-.modal[open] .modal__icon {
+.modal_opened .modal__icon {
   inline-size: 39px;
   block-size: 39px;
 }
