@@ -222,9 +222,15 @@
   background-color: #fff;
 }
 
-dialog[open],
+dialog[open] {
+  display: flex;
+}
+
 .modal_opened {
   display: flex;
+}
+
+dialog[open] {
   gap: 30px;
   inline-size: var(--inline-size-modal);
   border: 2px solid currentColor;
@@ -235,22 +241,19 @@ dialog[open],
   line-height: 1.5;
 }
 
-dialog[open]::backdrop,
-.modal_opened::backdrop {
+dialog[open]::backdrop {
   background-color: #000;
   opacity: 0.75;
 }
 
-dialog[open] .modal__content,
-.modal_opened .modal__content {
+dialog[open] .modal__content {
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
   gap: 20px;
 }
 
-dialog[open] .modal__icon,
-.modal_opened .modal__icon {
+dialog[open] .modal__icon {
   inline-size: 39px;
   block-size: 39px;
 }
