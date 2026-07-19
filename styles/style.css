@@ -222,31 +222,9 @@
   background-color: #fff;
 }
 
-.modal_opened {
-  display: block;
-}
-
+dialog[open],
 .modal_opened {
   display: flex;
-}
-
-.dialog_opened {
-  display: block;
-}
-
-.dialog_opened {
-  display: flex;
-}
-
-dialog[open] {
-  display: block;
-}
-
-dialog[open] {
-  display: flex;
-}
-
-.modal_opened {
   gap: 30px;
   inline-size: var(--inline-size-modal);
   border: 2px solid currentColor;
@@ -257,11 +235,13 @@ dialog[open] {
   line-height: 1.5;
 }
 
+dialog[open]::backdrop,
 .modal_opened::backdrop {
   background-color: #000;
   opacity: 0.75;
 }
 
+dialog[open] .modal__content,
 .modal_opened .modal__content {
   display: grid;
   grid-template-columns: max-content 1fr;
@@ -269,6 +249,7 @@ dialog[open] {
   gap: 20px;
 }
 
+dialog[open] .modal__icon,
 .modal_opened .modal__icon {
   inline-size: 39px;
   block-size: 39px;
