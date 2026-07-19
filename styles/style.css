@@ -223,7 +223,7 @@
 }
 
 .modal[open],
-.modal.opened {
+.modal_opened {
   display: grid;
   gap: 30px;
   inline-size: var(--inline-size-modal);
@@ -236,13 +236,13 @@
 }
 
 .modal[open]::backdrop,
-.modal.opened::backdrop {
+.modal_opened::backdrop {
   background-color: #000;
   opacity: 0.75;
 }
 
 .modal[open] .modal__content,
-.modal.opened .modal__content {
+.modal_opened .modal__content {
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
@@ -250,7 +250,7 @@
 }
 
 .modal[open] .modal__icon,
-.modal.opened .modal__icon {
+.modal_opened .modal__icon {
   inline-size: 39px;
   block-size: 39px;
 }
@@ -291,7 +291,7 @@
 .like-icon {
   inline-size: 39px;
   block-size: 30px;
-  transform: translateX(-3px); 
+  transform: translateX(-3px);
   transform-origin: center;
 }
 
@@ -310,27 +310,34 @@
 }
 
 .like-icon:hover .core {
-  fill: var(--animation-fill-color); transition: fill 0.3s linear 0s;
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0s;
 }
 .like-icon:hover .main-body {
-  fill: var(--animation-fill-color); transition: fill 0.3s linear 0.05s;
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
 }
 
 .card__icon-button:active .like-icon .core {
-  fill: var(--animation-fill-color); transition: fill 0.3s linear 0s;
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0s;
 }
 .card__icon-button:active .like-icon .main-body {
-  fill: var(--animation-fill-color); transition: fill 0.3s linear 0.05s;
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
-  fill: var(--animation-fill-color); transition: fill 0.3s linear 0s;
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0s;
 }
 .like-icon.is-liked .main-body {
-  fill: var(--animation-fill-color); transition: fill 0.3s linear 0.05s;
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
 }
 .like-icon.is-liked .contour {
-  fill: var(--animation-fill-color); transition: fill 0.3s linear 0.06s;
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .heart {
