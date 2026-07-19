@@ -222,15 +222,12 @@
   background-color: #fff;
 }
 
-dialog[open] {
-  display: flex;
-}
-
 .modal_opened {
   display: flex;
 }
 
 dialog[open] {
+  display: flex;
   gap: 30px;
   inline-size: var(--inline-size-modal);
   border: 2px solid currentColor;
