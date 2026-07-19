@@ -222,7 +222,14 @@
   background-color: #fff;
 }
 
-.modal_opened,
+.modal_opened {
+  display: grid;
+}
+
+.modal[open] {
+  display: grid;
+}
+
 .dialog_opened {
   display: grid;
 }
