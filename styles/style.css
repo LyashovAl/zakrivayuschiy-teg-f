@@ -223,7 +223,7 @@
 }
 
 .modal[open] {
-  display: flex;
+  display: grid;
   gap: 30px;
   inline-size: var(--inline-size-modal);
   border: 2px solid currentColor;
@@ -249,6 +249,7 @@
 .modal[open] .modal__icon {
   inline-size: 39px;
   block-size: 39px;
+  filter: invert(1);
 }
 
 .modal__text {
