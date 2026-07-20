@@ -216,7 +216,6 @@
 .main__save-button {
   justify-self: center;
   gap: 8px;
-  block-size: 55px;
 }
 
 .modal {
