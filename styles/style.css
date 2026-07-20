@@ -202,7 +202,6 @@
   z-index: 1;
   color: #fff;
   mix-blend-mode: difference;
-  text-transform: uppercase;
 }
 
 .button__icon {
@@ -264,6 +263,7 @@
 .modal__button {
   inline-size: 100%;
   padding: 12px;
+  text-transform: uppercase;
 }
 
 .card__icon-button {
